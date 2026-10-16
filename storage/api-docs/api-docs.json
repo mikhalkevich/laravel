@@ -1,0 +1,95 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Petshop-api Documentation",
+        "description": "petshop api",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000",
+            "description": "local server"
+        },
+        {
+            "url": "http://staging.example.com",
+            "description": "staging server"
+        },
+        {
+            "url": "http://example.com",
+            "description": "production server"
+        }
+    ],
+    "paths": {
+        "/api/maintexts": {
+            "get": {
+                "tags": [
+                    "Pages"
+                ],
+                "summary": "Получить список всех страниц",
+                "operationId": "fbab166f822fd4822c78276c606b83e8",
+                "responses": {
+                    "200": {
+                        "description": "Успешный возврат списка страниц"
+                    }
+                }
+            }
+        },
+        "/api/maintext": {
+            "get": {
+                "tags": [
+                    "Pages"
+                ],
+                "summary": "Получить список всех страниц",
+                "operationId": "3d9e2d7315f7730030f8ff0b4fbe6df4",
+                "responses": {
+                    "200": {
+                        "description": "Успешный возврат списка страниц"
+                    }
+                }
+            }
+        },
+        "/api/v1/admin/create": {
+            "post": {
+                "tags": [
+                    "Admin"
+                ],
+                "summary": "Create an Admin Account",
+                "operationId": "7b7a6430e26dfe0d31d7ffbdbcad355e",
+                "responses": {
+                    "201": {
+                        "description": "Register Successfully"
+                    },
+                    "422": {
+                        "description": "Unprocessable entity"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Server Error"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "name": "Authorization",
+                "in": "header",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Pages",
+            "description": "Pages"
+        },
+        {
+            "name": "Admin",
+            "description": "Admin"
+        }
+    ]
+}
