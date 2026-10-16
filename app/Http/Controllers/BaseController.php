@@ -4,10 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Maintext;
-
 class BaseController extends Controller
 {
-
     public function getIndex($url = null)
     {
         if($url){

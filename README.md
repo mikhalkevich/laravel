@@ -1,5 +1,5 @@
  
-## About your project
+## Интернет магазин и API запросов
 
 Laravel project
 
@@ -7,23 +7,21 @@ Laravel project
 - Установка проекта
 
 ```bash
-git clonne
+git clone ...
 ```
--
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+- cd laravel
+- composer install
+- npm i
+- создать базу и подключиься к ней в файле .env
+- php artisan optimize:clear
+- php artisan migrate
 
-## Contributing
+Запуск проекта:
+- cd laravel
+- php artisan serve
+- npm run dev
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Команда
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

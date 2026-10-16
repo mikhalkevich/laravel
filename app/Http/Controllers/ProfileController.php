@@ -3,11 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use Illuminate\Http\Response;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+use OpenApi\Attributes as OA;
+
+#[OA\Post(
+    path: "/api/v1/admin/create",
+    summary: "Create an Admin Account",
+    tags: ["Admin"],
+    responses: [
+        new OA\Response(response: Response::HTTP_CREATED, description: "Register Successfully"),
+        new OA\Response(response: Response::HTTP_UNPROCESSABLE_ENTITY, description: "Unprocessable entity"),
+        new OA\Response(response: Response::HTTP_BAD_REQUEST, description: "Bad Request"),
+        new OA\Response(response: Response::HTTP_INTERNAL_SERVER_ERROR, description: "Server Error")
+    ]
+)]
 
 class ProfileController extends Controller
 {

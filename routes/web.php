@@ -17,4 +17,6 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+Route::get('maintext/api',[Controllers\Api\MainTextApiController::class,'index']);
+
 Route::get('{url?}',[Controllers\BaseController::class,'getIndex']); //всегда в конце

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Maintext extends Model
 {
-    //
+    public $fillable = ['name','body','url'];
 }
