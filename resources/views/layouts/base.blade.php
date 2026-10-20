@@ -29,14 +29,14 @@
 
         <ul class="hidden items-center gap-10 lg:flex">
             <li>
-                <a href="#" aria-current="page" class="relative text-sm font-bold uppercase tracking-[0.08em] text-stone-950 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400">
-                    Work
+                <a href="/" aria-current="page" class="relative text-sm font-bold uppercase tracking-[0.08em] text-stone-950 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400">
+                    Main
                     <span class="absolute -bottom-1.5 left-0 h-[3px] w-full rounded-full bg-lime-400"></span>
                 </a>
             </li>
             <li>
-                <a href="/studio" class="text-sm font-bold uppercase tracking-[0.08em] text-stone-500 transition-colors duration-200 hover:text-stone-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400">
-                    Studio
+                <a href="/catalog" class="text-sm font-bold uppercase tracking-[0.08em] text-stone-500 transition-colors duration-200 hover:text-stone-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400">
+                    Catalog
                 </a>
             </li>
             <li>

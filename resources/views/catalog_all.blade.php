@@ -1,5 +1,6 @@
 @extends('layouts.base')
 @section('content')
+    <div>
     <nav class="flex mb-5 w-full" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-2">
             <li class="inline-flex items-center">
@@ -22,4 +23,28 @@
         </li>
         @endforeach
     </ul>
+        <div class="flex px-3 py-3">
+            @foreach($products as $product)
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <a href="{{asset('product/'.$product->id)}}">
+                    <img class="w-full" src="{{asset('storage/'.$product->picture)}}" alt="{{$product->name}}">
+                    </a>
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">
+                            <a href="{{asset('product/'.$product->id)}}" class="btn btn-link hover:underline">
+                            {{$product->name}}
+                            </a>
+                        </div>
+                        <p class="text-gray-700 text-base">
+                            {{$product->description}}
+                        </p>
+                    </div>
+                    <div class="px-6 py-4">
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"> {{$product->price}} руб.</span>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
 @endsection
