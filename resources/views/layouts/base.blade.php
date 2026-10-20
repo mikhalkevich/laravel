@@ -82,7 +82,7 @@
 
     </nav>
 </header>
-<main class="flex h-screen justify-center items-center">
+<main class="flex h-screen justify-center items-center w-full">
 @yield('content')
 </main>
 <footer>

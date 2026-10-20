@@ -79,6 +79,8 @@ class MaintextApiController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $maintext = Maintext::find($id);
+        $maintext->delete();
+        return response()->json(['message' => 'deleted successfully']);
     }
 }

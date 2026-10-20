@@ -34,6 +34,20 @@
                 }
             }
         },
+        "/api/catalog": {
+            "get": {
+                "tags": [
+                    "Pages"
+                ],
+                "summary": "Получить каталог всех страниц",
+                "operationId": "9bee86087243ab0c3e3bdd9d25f5b41b",
+                "responses": {
+                    "200": {
+                        "description": "Успешный возврат каталога"
+                    }
+                }
+            }
+        },
         "/api/maintext": {
             "get": {
                 "tags": [
@@ -41,6 +55,18 @@
                 ],
                 "summary": "Получить список всех страниц",
                 "operationId": "3d9e2d7315f7730030f8ff0b4fbe6df4",
+                "responses": {
+                    "200": {
+                        "description": "Успешный возврат списка страниц"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Pages"
+                ],
+                "summary": "Создать страницу",
+                "operationId": "812541dd206a62f670a939bad64bf6d5",
                 "responses": {
                     "200": {
                         "description": "Успешный возврат списка страниц"
