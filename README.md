@@ -7,12 +7,12 @@ Laravel project
 - Установка проекта
 
 ```bash
-git clone ...
+git clone  https://github.com/mikhalkevich/laravel.git
 ```
 - cd laravel
 - composer install
 - npm i
-- создать базу и подключиься к ней в файле .env
+- создать базу и подключиься к ней в файле .env (.env файл восстановить из .env.example)
 - php artisan optimize:clear
 - php artisan migrate
 
