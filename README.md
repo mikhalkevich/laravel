@@ -16,8 +16,7 @@ git clone  https://github.com/mikhalkevich/laravel.git
 - php artisan optimize:clear
 - php artisan migrate
 
-Запуск проекта:
-- cd laravel
+Запуск проекта:  
 - php artisan serve
 - npm run dev
 
